@@ -14,10 +14,10 @@ module.exports = {
   deploy: {
     production: {
       user: 'root',
-      host: '116.196.17.78',
+      host: '8.6.8.244:3000',
       ref: 'origin/master',
-      repo: 'git@github.com:wmui/essay.git',
-      path: '/root/essay',
+      repo: 'git@github.com:biabiaya/essay.git',
+      path: '/home/project/essay',
       'post-deploy': 'yarn && npm run build && pm2 reload ecosystem.config.js --env production'
     }
   }

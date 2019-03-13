@@ -1,7 +1,7 @@
 module.exports = {
   user: {
     role: 'superAdmin',
-    username: 'q',
+    username: 'bia',
     password: 'q',
     nickname: 'Essay',
     email: 'qq22337383@gmail.com',
@@ -13,7 +13,7 @@ module.exports = {
   },
   mongodb: {
     host: '127.0.0.1',
-    database: 'essay-dev-1',
+    database: 'essay-dev',
     port: 27017,
     username: '',
     password: '',

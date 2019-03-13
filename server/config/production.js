@@ -19,8 +19,8 @@ module.exports =  {
     password: '',
   },
   githubConfig: {
-    githubClient: '',
-    githubSecret: '',
+    githubClient: 'c1d2860fe1aa9ca8cc5c',
+    githubSecret: '07335b42f578b919f4ce7704ba196809ebe0adae',
     scope: 'user',
   },
   emailConfig: {
@@ -28,7 +28,7 @@ module.exports =  {
     pass: '',
   },
   app: {
-    domain: 'https://www.86886.wang',
+    domain: 'http://8.6.8.244:3000',
     baseApi: '/v1',
   },
 }
