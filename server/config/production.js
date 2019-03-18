@@ -12,7 +12,7 @@ module.exports =  {
     expiresIn: 1296000,
   },
   mongodb: {
-    host: '127.0.0.1',
+    host: '8.6.8.244',
     database: 'essay',
     port: 27017,
     username: '',
