@@ -1,11 +1,11 @@
 <template>
   <div class="index">
-    <blog-list :articles="allArticles" />
-    <wmui-pagination 
-    :limit="limit" 
-    :total="total" 
+    <blog-list :articles="allArticles"></blog-list>
+    <wmui-pagination
+    :limit="limit"
+    :total="total"
     :currentPage="currentPage"
-    @pageClick="pageClick"/>
+    @pageClick="pageClick"></wmui-pagination>
   </div>
 </template>
 <script>

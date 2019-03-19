@@ -1,6 +1,6 @@
 <template>
   <div class="blog">
-    <div class="header-wraper">
+    <div class="header-wraper" v-if="$store.state.adminToken">
       <header class="blog-header">
         <div
           class="header-back"

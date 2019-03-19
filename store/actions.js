@@ -7,9 +7,9 @@ export default {
     if(cookies.localToken) {
       commit('SET_LOCAL_TOKEN', cookies.localToken)
     }
-    if(cookies.adminToken) {
-      commit('SET_ADMIN_TOKEN', cookies.adminToken)
-    }
+    // if(cookies.adminToken) {
+    //   commit('SET_ADMIN_TOKEN', cookies.adminToken)
+    // }
     commit('SET_APP', res.locals.app)
     const { data } = await axios.get(`${state.app.baseUrl}/admin`)
     commit('SET_ADMIN_INFO', data)
