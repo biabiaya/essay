@@ -283,5 +283,4 @@ export default {
     }
   }
 }
-
 </style>
