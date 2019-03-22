@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       upload: {
-        url: this.$store.getters.baseUrl + '/upload-img',
+        url: this.$store.state.app.baseUrl + '/upload-img',
         headers: {
           Token: this.$store.state.adminToken,
         },
