@@ -124,7 +124,7 @@ export default {
 
 </script>
 <style lang="scss">
-@import '~/assets/styles/var.scss';
+@import '../assets/styles/var.scss';
 .blog {
   position: relative;
   .header-wraper {
