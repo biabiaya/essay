@@ -116,6 +116,10 @@ export default {
           toUserContent: lastItem.replyId.content,
           toUserEmail: lastItem.replyId.user.email,
           articleId: lastItem.article.id
+        }).success(() => {
+          console.log('success')
+        }).error((err) => {
+          console.log(err.toString())
         })
       }
       // 状态重置
