@@ -51,18 +51,18 @@ export default {
       tag: '',
       flag: [
         {
-          state: 0,
+          state: '0',
           name: '置顶',
         },
         {
-          state: 1,
+          state: '1',
           name: '首页显示'
         },
         {
-          state: 2,
+          state: '2',
           name: '标签页显示'
         },{
-          state: 3,
+          state: '3',
           name: '草稿'
         },
       ],

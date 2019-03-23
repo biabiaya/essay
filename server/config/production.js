@@ -24,8 +24,8 @@ module.exports =  {
     scope: 'user',
   },
   emailConfig: {
-    user: '',
-    pass: '',
+    user: 'biabiaya@outlook.com',
+    pass: 'Bia15021182795.',
   },
   app: {
     domain: 'http://8.6.8.244:3000',
