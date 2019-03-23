@@ -78,6 +78,3 @@ dist
 
 # IDE
 .idea
-
-NOTE.md
-server/public/*

@@ -4,7 +4,7 @@ module.exports =  {
     username: 'q',
     password: 'q',
     nickname: 'Essay',
-    email: 'qq22337383@gmail.com',
+    email: 'water.only.you@qq.com',
     motto: 'Never too old to learn',
   },
   jwt: {
@@ -24,7 +24,7 @@ module.exports =  {
     scope: 'user',
   },
   emailConfig: {
-    user: 'biabiaya@outlook.com',
+    user: 'biya510@qq.com',
     pass: 'Bia15021182795.',
   },
   app: {
