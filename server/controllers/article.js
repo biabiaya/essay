@@ -4,14 +4,15 @@ const Article = mongoose.model('Article')
 // flag: 0置顶 1首页 2非首页 3草稿
 exports.getArticles = async (req, res, next) => {
   let {
-    page = 1, 
-    limit = 15, 
-    id = '', 
-    keyword = ''
+    page = 1,
+    limit = 15,
+    id = '',
+    keyword = '',
+    // userId = '',
   } = req.params
 
   let flag = res.locals.flag
-  
+
   let findOption = {}
   keyword = decodeURIComponent(keyword)
   page = Number((page - 1) * limit) || 0
@@ -24,7 +25,8 @@ exports.getArticles = async (req, res, next) => {
       flag: {
         $ne: 3
       },
-      tags: [id]
+      tags: [id],
+      // user: username
     }
   } else if (keyword) {
     // 根据keyword 搜索查询
@@ -40,12 +42,14 @@ exports.getArticles = async (req, res, next) => {
         content: {
           $regex: reg
         }
-      }]
+      }],
+      //username: username
     }
   } else {
     // 首页文章
     findOption = {
-      flag
+      flag,
+      //username: username
     }
   }
   try {

@@ -25,6 +25,10 @@ router
     check.bodyParams(['username', 'password']),
     user.login,
   )
+  .post('/register',
+    check.bodyParams(['username', 'password']),
+    user.register,
+  )
   .post('/logout',
     auth('adminToken'),
     user.logout,

@@ -59,7 +59,7 @@
         <i class="wmui icon-backtop"></i>
       </a>
     </aside>
-    <footer class="blog-footer">
+    <footer class="blog-footer" >
       <p>Powered by <a href="https://github.com/biabiaya" target="_blank">Essay</a></p>
     </footer>
   </div>

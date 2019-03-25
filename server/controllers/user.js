@@ -16,7 +16,7 @@ exports.login = async (req, res, next) => {
       password: password
     }).exec()
     if (user) {
-      const t = token.sign(user) 
+      const t = token.sign(user)
       res.cookie('adminToken', t)
       res.json({
         success: true,
@@ -37,6 +37,55 @@ exports.login = async (req, res, next) => {
     })
   }
 }
+
+exports.register = async (req, res, next) => {
+  let {
+    username,
+    password
+  } = req.body
+
+  // check user name
+  try {
+    let user = await User.findOne({
+      username: username,
+    }).exec()
+    if (user) {
+      res.json({
+        success: false,
+        err: 'username existed.'
+      })
+    }
+    else {
+      password = md5(password)
+      let new_user = User({
+        username:username,
+        password:password
+      })
+
+      User.create(new_user, (err, docs) =>{
+        if(err) {
+          res.json({
+            success: false,
+            err: 'fail to insert user'
+          })
+        }
+        else {
+          res.json({
+            success: true,
+            err: 'success insert user.'
+          })
+        }
+      })
+
+    }
+  } catch (e) {
+    res.json({
+      success: false,
+      err: e
+    })
+  }
+}
+
 
 exports.logout = (req, res) => {
   res.clearCookie('adminToken')

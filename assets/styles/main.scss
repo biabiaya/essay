@@ -163,6 +163,21 @@ code {
   }
 }
 
+.register {
+  input {
+    display: block;
+    width: 300px;
+    margin: 0 auto 30px auto;
+  }
+
+  button {
+    width: 300px;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 /* archives */
 .archives {
   .archive-item {

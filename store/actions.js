@@ -130,6 +130,11 @@ export default {
     if (data.success) commit('SET_ADMIN_TOKEN', data.data.adminToken)
     return data
   },
+  async REGISTER({ commit, state }, user) {
+    const { data } = await axios.post(`${state.app.baseUrl}/register`, user)
+    // if (data.success) commit('SET_ADMIN_TOKEN', data.data.adminToken)
+    return data
+  },
 
   async LOGOUT({ state }) {
     const { data } = await axios.post(`${state.app.baseUrl}/logout`)

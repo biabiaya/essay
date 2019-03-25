@@ -25,7 +25,7 @@ module.exports =  {
   },
   emailConfig: {
     user: 'biya510@qq.com',
-    pass: 'Bia15021182795.',
+    pass: 'xrvomubnwmpsbcii',
   },
   app: {
     domain: 'http://8.6.8.244:3000',

@@ -42,6 +42,7 @@ exports.githubCallback = async (req, res, next) => {
         const {
           data
         } = ret
+        console.log(data);
         userInfo.username = data.login
         userInfo.email = data.email
         userInfo.nickname = data.name
