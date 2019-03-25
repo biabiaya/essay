@@ -106,9 +106,9 @@ export default {
       this.comments.push(comments.data[0])
       // 回复邮件通知
       if(this.app.isSMTPConfig && this.replyId) {
-        console.log(this.realComments);
         let lastIndex = this.realComments.length - 1
         let lastItem = this.realComments[lastIndex]
+        console.log(lastItem);
         this.SEND_EMAIL({
           fromUserNickname: lastItem.user.username,
           fromUserContent: lastItem.content,
