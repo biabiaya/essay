@@ -108,14 +108,13 @@ export default {
       if(this.app.isSMTPConfig && this.replyId) {
         let lastIndex = this.realComments.length - 1
         let lastItem = this.realComments[lastIndex]
-        console.log(lastItem);
         this.SEND_EMAIL({
           fromUserNickname: lastItem.user.username,
           fromUserContent: lastItem.content,
           fromUserEmail: lastItem.user.email,
-          toUserNickname: lastItem.replyId.user.username,
-          toUserContent: lastItem.replyId.content,
-          toUserEmail: lastItem.replyId.user.email,
+          toUserNickname: lastItem.reply_id.user.username,
+          toUserContent: lastItem.reply_id.content,
+          toUserEmail: lastItem.reply_id.user.email,
           articleId: lastItem.article.id
         }).success(() => {
           console.log('success')
