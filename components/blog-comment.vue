@@ -116,11 +116,7 @@ export default {
           toUserContent: lastItem.reply_id.content,
           toUserEmail: lastItem.reply_id.user.email,
           articleId: lastItem.article.id
-        }).success(() => {
-          console.log('success')
-        }).error((err) => {
-          console.log(err.toString())
-        })
+        });
       }
       // 状态重置
       this.disabled = false
